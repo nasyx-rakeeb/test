@@ -50,7 +50,7 @@ export default function App() {
 
     const handleActionSheetPress = async (index) => {
         if (index === 0) {
-            // Camera
+            
             if (hasCameraPermission) {
                 const {
                     uri
@@ -58,7 +58,7 @@ export default function App() {
                 handleImage(uri);
             }
         } else if (index === 1) {
-            // Library
+            
             if (hasGalleryPermission) {
                 const {
                     uri
@@ -70,7 +70,7 @@ export default function App() {
     };
 
     const handleImage = (uri) => {
-        // Handle the selected image URI
+
         console.log(`Selected image URI: ${uri}`);
     };
 
